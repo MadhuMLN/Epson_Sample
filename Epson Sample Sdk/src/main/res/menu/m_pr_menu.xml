@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/config"
+        android:orderInCategory="100"
+        android:title="@string/conf"
+        app:showAsAction="never">
+        <menu >
+            <item
+                android:id="@+id/pt1"
+                android:orderInCategory="100"
+                android:title="@string/upd_prnt"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/stt"
+                android:orderInCategory="100"
+                android:title="@string/stt"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>

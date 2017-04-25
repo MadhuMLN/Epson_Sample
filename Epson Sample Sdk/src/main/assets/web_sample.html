@@ -1,0 +1,52 @@
+<html>
+<head>
+    <style>
+        body{
+        background-color: #FFFF;
+        color:#3b5998;
+        }
+        .abutton input{
+        background-color: #3b5998;
+        width: 300px;
+        padding:10px;
+        color: #FFF;
+        }
+		
+        
+		.data input[type="text"] { 
+		  	background-color: #3b5998;
+		    width:240px;
+          	padding:10px;
+		    top:10px
+		    color: #FFF;
+        }
+		.data button
+		{
+    		position:relative;
+    		left:0px;
+    		top:0px;    
+		}
+		
+</style>
+
+    <script type="text/javascript">
+		
+function Pa(value) {
+       MyWebResponse.Print(value);
+    }
+		
+</script>
+</head>
+<body>
+<center>
+    <h3>Sample Web Print</h3>
+    <div id="content">Click on this Button To start print</div>
+    <div class="abutton">
+
+
+        <input type="button" value="TestPrint" onClick="Pa(26997)" /><br/>
+    </div>
+
+</center>
+</body>
+</html>
