@@ -29,7 +29,7 @@
                 android:resource="@xml/device_filter" />
         </activity>
 
-        <activity
+        <!---<activity
             android:name=".MainActivity"
             android:label="@string/app_title"
             android:screenOrientation="portrait" >
@@ -38,6 +38,20 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>-->
+        
+        <activity
+            android:name=".Test_P"
+            android:label="@string/app_title"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                 android:resource="@xml/device_filter" />
