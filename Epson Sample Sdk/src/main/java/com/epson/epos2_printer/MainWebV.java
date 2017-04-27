@@ -171,7 +171,8 @@ public class MainWebV extends AppCompatActivity {
             alertDialog.setPositiveButton("YES",
                     new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            Intent chnIntent = new Intent(MainWebV.this, MainActivity.class);
+                           //Intent chnIntent = new Intent(MainWebV.this, MainActivity.class);
+                            Intent chnIntent = new Intent(MainWebV.this, Test_P.class);
                             chnIntent.putExtra("STRING_DATA", avalue);
                             startActivity(chnIntent);
                         }
